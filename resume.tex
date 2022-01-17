@@ -1,0 +1,209 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Simon Chase
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+% SETUP {
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+		\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+			\textbf{#1} & #2 \\
+			\textit{\small#3} & \textit{\small #4} \\
+		\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+%}
+
+\begin{document}
+
+% HEADING
+\begin{center}
+    \textbf{\Huge \scshape Simon Chase} \\ \vspace{1pt}
+    \small
+	\href{mailto:smchase@protonmail.com}{\underline{smchase@protonmail.com}} $|$ 
+    \href{https://linkedin.com/in/simon-chase}{\underline{linkedin.com/in/simon-chase}} $|$
+    \href{https://github.com/smchase}{\underline{github.com/smchase}}
+\end{center}
+
+
+% SKILLS
+\section{Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+	\textbf{Languages}{: Java, C, C++, JavaScript (p5.js), Racket} \\
+	\textbf{Tools}{: Git, GitHub, Bash, Visual Studio Code, IntelliJ, \LaTeX}
+}}
+\end{itemize}
+
+
+% EXPERIENCE
+\section{Experience}
+\resumeSubHeadingListStart
+	\resumeSubheading
+		{Assistant Manager}{Oct. 2019 -- Aug. 2021}
+		{Gravity Climbing Gym}{Hamilton, ON}
+		\resumeItemListStart
+			\resumeItem{Managed staff and handled sales, with broad responsibilities throughout the gym}
+			\resumeItem{Took ownership of new initiatives, such as a Bluetooth music system}
+			\resumeItem{Worked as part of a team to ensure smooth gym operations}
+		\resumeItemListEnd
+
+	\resumeSubheading
+		{Belay Instructor}{Aug. 2019 -- Aug. 2021}
+		{Gravity Climbing Gym}{Hamilton, ON}
+		\resumeItemListStart
+			\resumeItem{Led in-depth courses of up to a dozen customers}
+			\resumeItem{Taught customers how to belay, as well as best safety practices}
+		\resumeItemListEnd
+
+	\resumeSubheading
+		{Youth Coach}{Feb. 2018 -- Dec. 2020}
+		{Gravity Climbing Gym}{Hamilton, ON}
+		\resumeItemListStart
+			\resumeItem{Head coach of a semi-competitive youth climbing program}
+			\resumeItem{Developed and led lessons, workouts, drills, etc.}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% PROJECTS
+\section{Projects}
+\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{\href{https://github.com/Bro-Co/Physics-Engine}{\underline{Physics Engine}}} $|$ \emph{Java, Java AWT}}{} \resumeItemListStart
+			\resumeItem{Created a basic physics engine from scratch using Java AWT}
+			\resumeItem{Explored and implemented optimizations to handle large numbers of objects}
+			\resumeItem{Implemented a hybrid of time-based and event-based calculations to improve efficiency}
+		\resumeItemListEnd
+	\resumeProjectHeading
+		{\textbf{\href{https://github.com/smchase/ICS201/tree/master/SUDOKU}{\underline{Sudoku Solver}}} $|$ \emph{C++}}{}
+		\resumeItemListStart
+			\resumeItem{Researched optimal strategies to solve sudoku problems}
+			\resumeItem{Implemented the dancing links algorithm using doubly linked lists to maximize the program's solving speed}
+		\resumeItemListEnd
+	\resumeProjectHeading
+		{\textbf{\href{https://github.com/smchase/Carrier-Pigeon}{\underline{Carrier Pigeon}}} $|$ \emph{Java, Socket}}{}
+		\resumeItemListStart
+			\resumeItem{Utilized socket to create a local messaging appliction in Java from scratch}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% AWARDS
+\section{Awards}
+\resumeSubHeadingListStart
+	\resumeProjectHeading
+		{\textbf{Computing}}{}
+		\resumeItemListStart
+			\resumeItem{Distinction in the 2021 Canadian Computing Competiton (Senior Division), Ranked 379/2920}
+			\resumeItem{Distinction in the 2020 Canadian Computing Competiton (Senior Division), Ranked 204/2827}
+		\resumeItemListEnd
+	\resumeProjectHeading
+		{\textbf{Other}}{}
+		\resumeItemListStart
+			\resumeItem{UWaterloo Financial Literacy Competiton Junior 1st Place}
+			\resumeItem{Ontario Lead Climbing Provincials Finalist}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+% EDUCATION
+\section{Education}
+\resumeSubHeadingListStart
+	\resumeSubheading
+		{University of Waterloo}{Waterloo, ON}
+		{Bachelor of Computer Science, 90\% Average}{Sept. 2021 -- April 2026}
+	\resumeItemListStart
+		\resumeItem{President's Scholarship of Distinction}
+	\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
+
+
+% Move CCC up as heading, use percentile, expand on what ccc is
+% write readmes and docs for projects
+% did x with y to achieve z
+% quantify stuff, be specific for projects
+% could add color
+% could add hours worked
+% be specific and make it sound good
+
+% could expand on contests and projects
+% could combine work positions
+% highlight specific skills
+% add buzzwords
+
+% hit up Zetyz later
