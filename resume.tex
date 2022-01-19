@@ -19,6 +19,7 @@
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{ulem}
 \input{glyphtounicode}
 
 \pagestyle{fancy}
@@ -92,9 +93,9 @@
 \begin{center}
     \textbf{\Huge \scshape Simon Chase} \\ \vspace{1pt}
     \small
-	\href{mailto:smchase@protonmail.com}{\underline{smchase@protonmail.com}} $|$ 
-    \href{https://linkedin.com/in/simon-chase}{\underline{linkedin.com/in/simon-chase}} $|$
-    \href{https://github.com/smchase}{\underline{github.com/smchase}}
+	\href{mailto:schase@uwaterloo.ca}{\uline{schase@uwaterloo.ca}} $|$ 
+    \href{https://linkedin.com/in/simon-chase}{\uline{linkedin.com/in/simon-chase}} $|$
+    \href{https://github.com/smchase}{\uline{github.com/smchase}}
 \end{center}
 
 
@@ -102,10 +103,35 @@
 \section{Skills}
 \begin{itemize}[leftmargin=0.15in, label={}]
 \small{\item{
-	\textbf{Languages}{: Java, C, C++, JavaScript (p5.js), Racket} \\
-	\textbf{Tools}{: Git/GitHub, Bash, Visual Studio Code, IntelliJ IDEA, \LaTeX}
+	\textbf{Languages}{: Java, C, C++, JavaScript (p5.js), HTML/CSS, Racket} \\
+	\textbf{Tools}{: Git/GitHub, Bash, Linux, Visual Studio Code, IntelliJ IDEA, \LaTeX}
 }}
 \end{itemize}
+
+
+% PROJECTS
+\section{Projects}
+\resumeSubHeadingListStart
+	\resumeProjectHeading
+	{\textbf{\href{https://github.com/Bro-Co/Physics-Engine}{\uline{Physics Engine}}} $|$ \textit{Java, Java AWT}}{} \resumeItemListStart
+			\resumeItem{Created a basic physics engine from scratch using Java AWT}
+			\resumeItem{Explored and implemented optimizations, \textbf{doubling benchmark performance}}
+			\resumeItem{Implemented a hybrid of time-based and event-based calculations to handle \textbf{100s of moving objects}}
+		\resumeItemListEnd
+	\resumeProjectHeading
+		{\textbf{\href{https://github.com/smchase/ICS201/tree/master/SUDOKU}{\uline{Sudoku Solver}}} $|$ \textit{C++}}{}
+		\resumeItemListStart
+			\resumeItem{Researched optimal strategies to solve sudoku problems}
+			\resumeItem{Implemented the dancing links algorithm using \textbf{doubly linked lists} to maximize the program's solving speed}
+			\resumeItem{Achieved \textbf{solve times of under 1s} for all sudoku problems}
+		\resumeItemListEnd
+	\resumeProjectHeading
+		{\textbf{\href{https://github.com/smchase/Carrier-Pigeon}{\uline{Carrier Pigeon}}} $|$ \textit{Java, Socket}}{}
+		\resumeItemListStart
+			\resumeItem{Utilized socket to create a local messaging application in Java from scratch}
+			\resumeItem{Designed server class to be self-hostable to \textbf{improve privacy and security} for users}
+		\resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
 % EXPERIENCE
@@ -115,18 +141,18 @@
 		{Assistant Manager}{Oct. 2019 -- Aug. 2021}
 		{Gravity Climbing Gym}{Hamilton, ON}
 		\resumeItemListStart
-			\resumeItem{Managed up to 5 staff, with broad responsibilities throughout the gym}
+			\resumeItem{\textbf{Managed up to 5 staff}, with broad responsibilities throughout the gym}
 			\resumeItem{Took ownership of new initiatives, such as a Bluetooth music system and upgrading equipment}
-			\resumeItem{Worked as part of a team to ensure smooth gym operations and drive sales}
+			\resumeItem{Worked as \textbf{part of a team} to ensure smooth gym operations and drive sales}
 		\resumeItemListEnd
 
 	\resumeSubheading
 		{Belay Instructor}{Aug. 2019 -- Aug. 2021}
 		{Gravity Climbing Gym}{Hamilton, ON}
 		\resumeItemListStart
-			\resumeItem{Led in-depth courses on how to belay for up to 10 customers}
-			\resumeItem{Emphasized best safety practices, leading to a 100\% pass rate of the follow-up test}
-			\resumeItem{Developed communication skills through teaching}
+			\resumeItem{Led in-depth courses on how to belay for \textbf{up to 10 customers}}
+			\resumeItem{Emphasized best safety practices, leading to a \textbf{100\% pass rate} of the follow-up test}
+			\resumeItem{Developed \textbf{communication skills} through teaching}
 		\resumeItemListEnd
 
 	\resumeSubheading
@@ -134,32 +160,7 @@
 		{Gravity Climbing Gym}{Hamilton, ON}
 		\resumeItemListStart
 			\resumeItem{Oversaw a semi-competitive youth climbing program as head coach}
-			\resumeItem{Formulated and led lessons and drills, leading to 3 athletes advancing to the competitive team}
-		\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-% PROJECTS
-\section{Projects}
-\resumeSubHeadingListStart
-	\resumeProjectHeading
-	{\textbf{\href{https://github.com/Bro-Co/Physics-Engine}{\underline{Physics Engine}}} $|$ \emph{Java, Java AWT}}{} \resumeItemListStart
-			\resumeItem{Created a basic physics engine from scratch using Java AWT}
-			\resumeItem{Explored and implemented optimizations, improving a benchmark scenario from $\sim$30 fps to $\sim$60 fps}
-			\resumeItem{Implemented a hybrid of time-based and event-based calculations to handle 100s of moving objects}
-		\resumeItemListEnd
-	\resumeProjectHeading
-		{\textbf{\href{https://github.com/smchase/ICS201/tree/master/SUDOKU}{\underline{Sudoku Solver}}} $|$ \emph{C++}}{}
-		\resumeItemListStart
-			\resumeItem{Researched optimal strategies to solve sudoku problems}
-			\resumeItem{Implemented the dancing links algorithm using doubly linked lists to maximize the program's solving speed}
-			\resumeItem{Achieved solve times of under 1s for all sudoku problems}
-		\resumeItemListEnd
-	\resumeProjectHeading
-		{\textbf{\href{https://github.com/smchase/Carrier-Pigeon}{\underline{Carrier Pigeon}}} $|$ \emph{Java, Socket}}{}
-		\resumeItemListStart
-			\resumeItem{Utilized socket to create a local messaging appliction in Java from scratch}
-			\resumeItem{Designed server class to be self-hostable to improve privacy and security for users}
+			\resumeItem{Formulated and led lessons and drills, leading to \textbf{3 athletes advancing} to the competitive team}
 		\resumeItemListEnd
 \resumeSubHeadingListEnd
 
@@ -170,13 +171,13 @@
 	\resumeProjectHeading
 		{\textbf{Canadian Computing Competiton (Senior Division)}}{}
 		\resumeItemListStart
-			\resumeItem{Ranked in the top 12\% of 2900+ competitors in 2021}
-			\resumeItem{Ranked in the top 8\% of 2800+ competitors in 2020}
+			\resumeItem{Ranked in the \textbf{top 12\%} of 2900+ competitors in 2021}
+			\resumeItem{Ranked in the \textbf{top 8\%} of 2800+ competitors in 2020}
 		\resumeItemListEnd
 	\resumeProjectHeading
 		{\textbf{Other}}{}
 		\resumeItemListStart
-			\resumeItem{Ranked 1st out of 500+ competitors in the UWaterloo Financial Literacy Competiton}
+			\resumeItem{Ranked \textbf{1st out of 500+ competitors} in the UWaterloo Financial Literacy Competiton}
 			\resumeItem{Reached finals at Ontario lead climbing provincials}
 		\resumeItemListEnd
 \resumeSubHeadingListEnd
